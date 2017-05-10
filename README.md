@@ -7,7 +7,7 @@ Now you can take the URL to any Pinterest board (or a CSV of a bunch of boards) 
 - Python 2.7
 - Pandas (pip install pandas)
 - Selenium (pip install selenium)
-- [Chromedriver](https://sites.google.com/a/chromium.org/chromedriver/) ( Download and place in the directory)
+- [Chrome driver](https://sites.google.com/a/chromium.org/chromedriver/) ( Download and place in the directory)
 - hashlib (pip install hashlib)
 - cPickle 
 - A [Pinterest](http://www.pinterest.com) Account
@@ -45,21 +45,21 @@ If you want to separate project, you can use labels argument in the constructor
 ph = s.Pinterest_Helper(<Pinterst login> , <Pinterest password>, label ='cats')
 ```
 This will create a separate "cats.p" cache file
-Using `download()` function will download the file to `./data/<Label Name>`
+Using `download()` function will download the file to `./data/cats`
 
 ### Custom download directory
 Use Directory argument to specify where the files should be downloaded. (Default is `./data/`)
 ```
-ph = s.Pinterest_Helper(<Pinterst login> , <Pinterest password>, directory ='./download')
-# This will now download files to ./data/<Label Name>
+ph = s.Pinterest_Helper(<Pinterst login> , <Pinterest password>, directory ='<Download DIR>')
+# This will now download files to ./<Download DIR>/<Label Name>
 ```
 
 ### Disable initialising browser
-Use `browser=False` to disable selenium. Useful only when downloading the files from cache.
+Use `browser=False` to disable selenium browser. Useful only when just downloading the files from cache.
 
 # Changes
-- [x] Pinterest now uses /474x/ files insted of /236x/ . So changed it to 474x in the url search
-- [x] Changed to chromedriver
-- [x] Using MD5 Checksum on urls to prevent redownloading and duplicate images.
+- [x] Pinterest now uses /474x/ files instead of /236x/ . So changed it to 474x in the url search
+- [x] Changed to Chrome driver
+- [x] Using MD5 Checksum on urls to prevent re-downloading and duplicate images.
 - [x] Caching using cPickle
 

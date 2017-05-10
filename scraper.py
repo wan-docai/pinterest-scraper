@@ -15,9 +15,9 @@ def u_to_s(uni):
 
 class Pinterest_Helper(object):
     
-    def __init__(self, login, pw, label='temp', directory='data',browser=True):
+    def __init__(self, login, pw, label='temp', directory='./data/',browser=True):
         self.label = label
-        self.directory = './'+ directory + '/'
+        self.directory = directory
         if browser:
             # self.browser = webdriver.Firefox()
             self.browser = webdriver.Chrome('./chromedriver') # you need to download chrome driver
