@@ -2,15 +2,10 @@ from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.common.keys import Keys
 import time,random,socket,unicodedata
-import string, copy
+import string, copy, time, hashlib, requests, os.path, os
 import pandas as pd
 import cPickle as pickle
-import hashlib
-import time
-import requests
 from urlparse import urlparse
-import os.path
-import os
 
 def randdelay(a,b):
     time.sleep(random.uniform(a,b))
@@ -20,7 +15,7 @@ def u_to_s(uni):
 
 class Pinterest_Helper(object):
     
-    def __init__(self, login, pw, label='cache', directory='data',browser=True):
+    def __init__(self, login, pw, label='temp', directory='data',browser=True):
         self.label = label
         self.directory = './'+ directory + '/'
         if browser:

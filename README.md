@@ -7,12 +7,15 @@ Now you can take the URL to any Pinterest board (or a CSV of a bunch of boards) 
 - Python 2.7
 - Pandas (pip install pandas)
 - Selenium (pip install selenium)
+- [Chromedriver](https://sites.google.com/a/chromium.org/chromedriver/) ( Download and place in the directory)
+- hashlib (pip install hashlib)
+- cPickle 
 - A [Pinterest](http://www.pinterest.com) Account
 
 ## How to Run:
 
 ```
-git clone https://github.com/xjdeng/pinterest-image-scraper.git
+git clone https://github.com/ankitshekhawat/pinterest-image-scraper.git
 cd pinterest-image-scraper
 import scraper as s
 ph = s.Pinterest_Helper(<Pinterst login> , <Pinterest password>)
@@ -22,6 +25,41 @@ images = ph.runme("http://URL-to-image-board")
 ### Or if you have a CSV file with a URL to a different image board on every line:
 
 ```
-images = s.runme(imageboards.csv)
+...
+images = ph.runme(imageboards.csv)
 ```
+
+### Cache file
+`runme()` also creates a cache file (cache.p) 
+To download the files listed in cache use 
+```
+...
+ph.downolad() 
+```
+
+This will download all the urls listed in the cache file to `./data/temp/`
+
+### Custom labels
+If you want to separate project, you can use labels argument in the constructor 
+```
+ph = s.Pinterest_Helper(<Pinterst login> , <Pinterest password>, label ='cats')
+```
+This will create a separate "cats.p" cache file
+Using `download()` function will download the file to `./data/<Label Name>`
+
+### Custom download directory
+Use Directory argument to specify where the files should be downloaded. (Default is `./data/`)
+```
+ph = s.Pinterest_Helper(<Pinterst login> , <Pinterest password>, directory ='./download')
+# This will now download files to ./data/<Label Name>
+```
+
+### Disable initialising browser
+Use `browser=False` to disable selenium. Useful only when downloading the files from cache.
+
+# Changes
+- [x] Pinterest now uses /474x/ files insted of /236x/ . So changed it to 474x in the url search
+- [x] Changed to chromedriver
+- [x] Using MD5 Checksum on urls to prevent redownloading and duplicate images.
+- [x] Caching using cPickle
 
