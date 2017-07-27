@@ -79,8 +79,9 @@ class Pinterest_Helper(object):
                         src = i.get_attribute("src")
 
                         if src:
-                            if string.find(src,"/474x/") != -1:
+                            if string.find(src,"/236x/") != -1 or string.find(src,"/474x/") != -1:
                                 print src        
+                                src = string.replace(src,"/236x/","/736x/")
                                 src = string.replace(src,"/474x/","/736x/")
                                 data[hashlib.md5(u_to_s(src)).hexdigest()] = u_to_s(src)
                                 pickle.dump( data, open( self.label+".p", "wb" ) )                               
