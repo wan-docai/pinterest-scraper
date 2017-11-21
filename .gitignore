@@ -9,3 +9,5 @@ chromedriver
 data/
 *.log
 .DS_Store
+config.py
+.DS_Store
