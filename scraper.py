@@ -16,7 +16,10 @@ from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.common.keys import Keys
 
-from config import PINTEREST_PASSWORD, PINTEREST_USERNAME
+try:
+    from config import PINTEREST_PASSWORD, PINTEREST_USERNAME
+except Exception as e:
+    print(e)
 
 
 def randdelay(a, b):
