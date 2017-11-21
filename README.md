@@ -16,11 +16,6 @@ Now you can take the URL to any Pinterest board (or a CSV of a bunch of boards) 
 
 ## How to Run:
 
-
-- `git clone https://github.com/ankitshekhawat/pinterest-image-scraper.git`
-
-- `cd pinterest-image-scraper`
-
 - `mv ./config_sample.py ./config.py`
 
 - Add your username / password to config.py
@@ -34,10 +29,14 @@ Now you can take the URL to any Pinterest board (or a CSV of a bunch of boards) 
 ## Use in a script
 
 ```
-from scraper import PinterestHelper
-ph = PinterestHelper(PINTEREST_USERNAME, PINTEREST_PASSWORD)
-images = ph.runme("Persian Cats") # Returns an array of img urls
-# images = ph.runme("https://pinterest.com/kuxbini/cute-pets/")
+import scraper as s
+ph = s.PinterestHelper(PINTEREST_USERNAME, PINTEREST_PASSWORD)
+
+# Returns an array of image urls
+images = ph.runme("Persian Cats")
+
+# Use a image board url instead
+images = ph.runme("https://pinterest.com/kuxbini/cute-pets/")
 ```
 
 
