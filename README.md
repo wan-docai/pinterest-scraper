@@ -32,11 +32,7 @@ Now you can take the URL to any Pinterest board (or a CSV of a bunch of boards) 
 import scraper as s
 ph = s.PinterestHelper(PINTEREST_USERNAME, PINTEREST_PASSWORD)
 
-# Returns an array of image urls
-images = ph.runme("Persian Cats")
-
-# Use a image board url instead
-images = ph.runme("https://pinterest.com/kuxbini/cute-pets/")
+s.main('search term')
 ```
 
 
