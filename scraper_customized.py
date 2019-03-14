@@ -11,6 +11,8 @@ import time
 import unicodedata
 import urllib
 from subprocess import call
+import os
+import argparse
 
 from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException
@@ -102,18 +104,17 @@ def main():
                 images = ph.runme('http://pinterest.com/search/pins/?q=' + urllib.parse.quote(term))
             # print(images)
             ph.close()
-            with open(term.replace(" ", "_") + "_pins.txt", "w") as file:
+            with open(os.path.join('./image_url/healthy', term.replace(" ", "_") + "_pins.txt"), "w") as file:
                 file.write('\n'.join([i.decode('UTF-8') for i in images]))
             # if len(sys.argv) > 2:
             #     destination = sys.argv[-1] + "/" + term.replace(" ", "_")
-            # else:
-            #     destination = "./" + term.replace(" ", "")
 
             # print(term, destination)
             print(term)
             # call('aria2c -i ./{}_pins.txt -d {} --continue --auto-file-renaming false'.format(term.replace(" ", "_"),
             #                                                                                   destination),
             #      shell=True)
+
 
 
 if __name__ == '__main__':
