@@ -12,7 +12,6 @@ import unicodedata
 import urllib
 from subprocess import call
 import os
-import argparse
 
 from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException
@@ -22,7 +21,6 @@ try:
     from config import PINTEREST_PASSWORD, PINTEREST_USERNAME
 except Exception as e:
     print(e)
-
 
 def randdelay(a, b):
     time.sleep(random.uniform(a, b))
@@ -90,7 +88,7 @@ class PinterestHelper(object):
 
 def main():
     if len(sys.argv) > 1:
-        for i in range(1, len(sys.argv)-1):
+        for i in range(2, len(sys.argv)-1):
             term = sys.argv[i]
     # else:
     #     print("\n\n[Error] Need arguments in this format:")
@@ -104,7 +102,7 @@ def main():
                 images = ph.runme('http://pinterest.com/search/pins/?q=' + urllib.parse.quote(term))
             # print(images)
             ph.close()
-            with open(os.path.join('./image_url/healthy', term.replace(" ", "_") + "_pins.txt"), "w") as file:
+            with open(os.path.join(sys.argv[1], term.replace(" ", "_") + "_pins.txt"), "w") as file:
                 file.write('\n'.join([i.decode('UTF-8') for i in images]))
             # if len(sys.argv) > 2:
             #     destination = sys.argv[-1] + "/" + term.replace(" ", "_")
@@ -119,3 +117,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    #command line input format python scraper_customized.py (directory to save url txt file) (search term #can be multiple terms and separate by "") (directory to download)
