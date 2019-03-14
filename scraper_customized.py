@@ -104,14 +104,14 @@ def main():
             ph.close()
             with open(os.path.join(sys.argv[1], term.replace(" ", "_") + "_pins.txt"), "w") as file:
                 file.write('\n'.join([i.decode('UTF-8') for i in images]))
-            # if len(sys.argv) > 2:
-            #     destination = sys.argv[-1] + "/" + term.replace(" ", "_")
+            if len(sys.argv) > 2:
+                destination = sys.argv[-1] + "/" + term.replace(" ", "_")
 
-            # print(term, destination)
+            print(term, destination)
             print(term)
-            # call('aria2c -i ./{}_pins.txt -d {} --continue --auto-file-renaming false'.format(term.replace(" ", "_"),
-            #                                                                                   destination),
-            #      shell=True)
+            call('aria2c -i ./{}_pins.txt -d {} --continue --auto-file-renaming false'.format(term.replace(" ", "_"),
+                                                                                              destination),
+                 shell=True)
 
 
 

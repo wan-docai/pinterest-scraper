@@ -1,0 +1,427 @@
+python scraper_customized.py ./image_url/healthy "Fruits dish" \
+"Yogurt dish" \
+"Milk dish" \
+"Low-fat cheeses dish" \
+"Whole-grain dish" \
+"White meat dish" \
+"Nuts dish" \
+"Seeds dish" \
+"Low calorie dish" \
+"Low glycemic dish" \
+"Keto diet dish" \
+"Natural Food dish" \
+"Complex carbohydrates dish" \
+"Healthy diet dish" \
+"Well rounded meal dish" \
+"Greek food dish" \
+./images/healthy
+
+
+python scraper_customized.py ./image_url/healthy "California fresh diet dish" \
+"Vegetables dish" \
+"Roast chicken and vegetables dish" \
+"Antipasti penne dish" \
+"Vegetarian dish" \
+"Vegetarian Tortilla casserole dish" \
+"Pescatarian dish" \
+"Vegan dish" \
+"Breaded Pork Chops with Apple-Cabbage Slaw dish" \
+"Bacon and Broccoli Rice Bowl dish" \
+"Beefy Stuffed Sweet Potato dish" \
+"Bean, Kale and Egg Stew dish" \
+"Chicken, Pepper and Corn Stir-Fry dish" \
+"Spicy Fish and Olive Spaghetti dish" \
+"Quinoa with Chicken and Lentils dish" \
+"Quinoa dish" \
+"Chicken dish" \
+"Lentils dish" \
+"Pork dish" \
+"Salmon dish" \
+"Steak dish" \
+"Fish dish dish" \
+"Cod dish" \
+"Clams dish" \
+"Oysters dish" \
+"Crab dish" \
+"Tuna dish" \
+"Fruit Salad dish" \
+"Fruit Basket dish" \
+"Fresh pressed Juice dish" \
+"Cold pressed juice dish" \
+"Berries dish" \
+"Açaí dish" \
+"Apple dish" \
+"Akee dish" \
+"Apricot dish" \
+"Avocado dish" \
+"Banana dish" \
+"Bilberry dish" \
+./images/healthy
+
+python scraper_customized.py ./image_url/healthy "Blackberry dish" \
+"Blackcurrant dish" \
+"Black sapote dish" \
+"Blueberry dish" \
+"Boysenberry dish" \
+"Buddha's hand dish" \
+"Crab apples dish" \
+"Currant dish" \
+"Cherry dish" \
+"Cherimoya dish" \
+"Chico fruit dish" \
+"Cloudberry dish" \
+"Coconut dish" \
+"Cranberry dish" \
+"Cucumber dish" \
+"Damson dish" \
+"Date dish" \
+"Dragonfruit dish" \
+"Durian dish" \
+"Elderberry dish" \
+"Feijoa dish" \
+"Fig dish" \
+"Goji berry dish" \
+"Gooseberry dish" \
+"Grape dish" \
+"Raisin dish" \
+"Grapefruit dish" \
+"Guava dish" \
+"Honeyberry dish" \
+"Huckleberry dish" \
+"Jabuticaba dish" \
+"Jackfruit dish" \
+"Jambul dish" \
+"Japanese plum dish" \
+"Jostaberry dish" \
+"Jujube dish" \
+"Juniper berry dish" \
+"Kiwano (horned melon) dish" \
+"Kiwifruit dish" \
+"Kumquat dish" \
+"Lemon dish" \
+"Lime dish" \
+"Loquat dish" \
+"Longan dish" \
+"Avocado dish" \
+"Bell pepper dish" \
+"Chili pepper dish" \
+"Corn kernel dish" \
+"Cucumber dish" \
+"Eggplant dish" \
+"Lychee dish" \
+"Mango dish" \
+"Mangosteen dish" \
+"Marionberry dish" \
+"Melon dish" \
+"Cantaloupe dish" \
+"Honeydew dish" \
+"Watermelon dish" \
+"Miracle fruit dish" \
+"Mulberry dish" \
+"Nectarine dish" \
+"Nance dish" \
+"Olive dish" \
+"Orange dish" \
+"Blood orange dish" \
+"Clementine dish" \
+"Mandarine dish" \
+"Tangerine dish" \
+"Papaya dish" \
+"Passionfruit dish" \
+"Peach dish" \
+"Pear dish" \
+"Persimmon dish" \
+"Plantain dish" \
+"Plum dish" \
+"Prune dish" \
+"Pineapple dish" \
+"Pineberry dish" \
+"Plumcot dish" \
+"Pomegranate dish" \
+"Pomelo dish" \
+"Purple mangosteen dish" \
+"Quince dish" \
+"Raspberry dish" \
+"Salmonberry dish" \
+"Rambutan dish" \
+"Redcurrant dish" \
+"Salal berry dish" \
+"Salak dish" \
+"Satsuma dish" \
+"Soursop dish" \
+"Star apple dish" \
+"Star fruit dish" \
+"Strawberry dish" \
+"Surinam cherry dish" \
+"Tamarillo dish" \
+"Tamarind dish" \
+"Ugli fruit dish" \
+"White currant dish" \
+"White sapote dish" \
+"Yuzu dish" \
+"Olive dish" \
+"Pea dish" \
+"Pumpkin dish" \
+"Squash dish" \
+"Tomato dish" \
+"Zucchini dish" \
+"artichoke dish" \
+"eggplant dish" \
+"asparagus dish" \
+"legumes dish" \
+"alfalfa sprouts dish" \
+"azuki beans dish" \
+"bean sprouts dish" \
+"black beans dish" \
+"black-eyed peas dish" \
+"borlotti bean dish" \
+"broad beans dish" \
+"chickpeas, garbanzos, or ceci beans dish" \
+"green beans dish" \
+"kidney beans dish" \
+"lentils dish" \
+"lima beans or Butter bean dish" \
+"mung beans dish" \
+"navy beans dish" \
+"pinto beans dish" \
+"runner beans dish" \
+"split peas dish" \
+"soy beans dish" \
+"peas dish" \
+"mangetout or snap peas dish" \
+"broccoflower  dish" \
+"broccoli dish" \
+"brussels sprouts dish" \
+"cabbage dish" \
+"kohlrabi dish" \
+"cauliflower dish" \
+"celery dish" \
+"endive dish" \
+"fiddleheads dish" \
+"frisee dish" \
+"fennel dish" \
+"greens dish" \
+"beet greens dish" \
+"bok choy dish" \
+"chard dish" \
+"collard greens dish" \
+"kale dish" \
+"mustard greens dish" \
+"spinach dish" \
+"herbs and spices dish" \
+"anise dish" \
+"basil dish" \
+"caraway dish" \
+"cilantro  dish" \
+"chamomile dish" \
+"dill dish" \
+"fennel dish" \
+"lavender dish" \
+"lemon Grass dish" \
+"marjoram dish" \
+"oregano dish" \
+"parsley dish" \
+"rosemary dish" \
+"sage dish" \
+"thyme dish" \
+"lettuce dish" \
+"arugula dish" \
+"mushrooms  dish" \
+"nettles dish" \
+"New Zealand spinach dish" \
+"okra dish" \
+"onions dish" \
+"Chives dish" \
+"Garlic dish" \
+"Leek dish" \
+"onion dish" \
+"shallot dish" \
+"Scallion dish" \
+"parsley dish" \
+"peppers  dish" \
+"bell pepper dish" \
+"chili pepper dish" \
+"Jalapeño dish" \
+"Habanero dish" \
+"Paprika dish" \
+"Tabasco pepper dish" \
+"Cayenne pepper dish" \
+"radicchio dish" \
+"rhubarb dish" \
+"root vegetables dish" \
+"beetroot  dish" \
+"Beet dish" \
+"Mangel-wurzel dish" \
+"carrot dish" \
+"celeriac dish" \
+"corms dish" \
+"eddoe dish" \
+"konjac dish" \
+"taro dish" \
+"water chestnut dish" \
+"ginger dish" \
+"parsnip dish" \
+"rutabaga dish" \
+"radish dish" \
+"wasabi dish" \
+"horseradish dish" \
+"white radish dish" \
+"daikon dish" \
+"tubers dish" \
+"jicama dish" \
+"jerusalem artichoke dish" \
+"potato dish" \
+"quandong dish" \
+"sunchokes dish" \
+"sweet potato dish" \
+"yam dish" \
+"turnip dish" \
+"salsify dish" \
+"skirret dish" \
+"sweetcorn  dish" \
+"topinambur dish" \
+"squashes  dish" \
+"acorn squash dish" \
+"bitter melon dish" \
+"butternut squash dish" \
+"banana squash dish" \
+"courgette  dish" \
+"Zucchini  dish" \
+"cucumber  dish" \
+"delicata dish" \
+"gem squash dish" \
+"hubbard squash dish" \
+"Squash dish" \
+"patty pans dish" \
+"pumpkin dish" \
+"spaghetti squash dish" \
+"tat soi dish" \
+"tomato  dish" \
+"watercress dish" \
+"Anchovy dish" \
+"Basa dish" \
+"Bass dish" \
+"Black cod dish" \
+"Bluefish dish" \
+"Bombay duck dish" \
+"Bream dish" \
+"Brill dish" \
+"Butter fish dish" \
+"Catfish dish" \
+"Cod  dish" \
+"Dogfish dish" \
+"Dorade dish" \
+"Eel dish" \
+"Flounder dish" \
+"Grouper dish" \
+"Haddock dish" \
+"Hake dish" \
+"Halibut dish" \
+"Herring dish" \
+"Ilish dish" \
+"John Dory dish" \
+"Lamprey dish" \
+"Lingcod dish" \
+"Mackerel dish" \
+"Mahi Mahi dish" \
+"Monkfish dish" \
+"Mullet dish" \
+"Orange roughy dish" \
+"Parrotfish dish" \
+"Patagonian toothfish  dish" \
+"Pike dish" \
+"Pilchard dish" \
+"Pollock dish" \
+"Pomfret dish" \
+"Pompano dish" \
+"Sablefish dish" \
+"Salmon dish" \
+"Sanddab dish" \
+"Sardine dish" \
+"Sea bass dish" \
+"Shad  dish" \
+"Shark dish" \
+"Skate dish" \
+"Smelt dish" \
+"Snakehead dish" \
+"Snapper  dish" \
+"Sole dish" \
+"Sprat dish" \
+"Suiter-fish dish" \
+"Sturgeon dish" \
+"Surimi dish" \
+"Swordfish dish" \
+"Tilapia dish" \
+"Tilefish dish" \
+"Trout  dish" \
+"Tuna  dish" \
+"Turbot dish" \
+"Wahoo dish" \
+"Whitefish dish" \
+"Whiting dish" \
+"Anticucho  dish" \
+"Asocena dish" \
+"Baeckeoffe  dish" \
+"Barbacoa dish" \
+"Berner Platte dish" \
+"Beşbarmaq dish" \
+"Birria dish" \
+"Bobotie dish" \
+"Bobotie dish" \
+"Boliche dish" \
+"Bosintang  dish" \
+"Braciola dish" \
+"Breaded cutlet  dish" \
+"Brunswick stew dish" \
+"Burgoo  dish" \
+"Capuns dish" \
+"Carimañola dish" \
+"Carne a la tampiqueña dish" \
+"Carne pinchada  dish" \
+"Carne pizzaiola dish" \
+"Carpaccio dish" \
+"Chiles en nogada dish" \
+"Chislic dish" \
+"Chunla dish" \
+"Churrasco dish" \
+"Çiğ köfte dish" \
+"City chicken dish" \
+"Cockentrice  dish" \
+"Curanto dish" \
+"Discada  dish" \
+"Escalope  dish" \
+"Farsu magru dish" \
+"Fatányéros dish" \
+"Finnbiff dish" \
+"Flurgönder dish" \
+"Fricassee dish" \
+"Frigărui dish" \
+"Giouvetsi dish" \
+"Güveç dish" \
+"Guyanese pepperpot dish" \
+"Gyro dish" \
+"Hachee dish" \
+"Haggis dish" \
+"Hodge-Podge dish" \
+"Jerusalem mixed grill dish" \
+"Kaalilaatikko dish" \
+"Kachilaa dish" \
+"Kelaguen dish" \
+"Kelaguen dish" \
+"Khorovats dish" \
+"Kibbeh nayyeh bulgur and spices dish" \
+"Kiviak dish" \
+"Kohlwurst dish" \
+"Koi dish" \
+"Korean barbecue dish" \
+"Kutti pi dish" \
+"Larb khua mu dish" \
+"Larb  dish" \
+"Laurices dish" \
+"Lawar dish" \
+"Lihapiirakka dish" \
+"Lomo a lo pobre dish" \
+"Lörtsy dish" \
+"Maksalaatikko  dish" \
+"À la Maréchale dish" \
+./images/healthy
