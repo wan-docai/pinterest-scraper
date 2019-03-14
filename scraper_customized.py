@@ -100,7 +100,7 @@ def main():
                 images = ph.runme(term)
             else:
                 images = ph.runme('http://pinterest.com/search/pins/?q=' + urllib.parse.quote(term))
-            # print(images)
+            print(images)
             ph.close()
             with open(os.path.join(sys.argv[1], term.replace(" ", "_") + "_pins.txt"), "w") as file:
                 file.write('\n'.join([i.decode('UTF-8') for i in images]))
@@ -108,7 +108,7 @@ def main():
                 destination = sys.argv[-1] + "/" + term.replace(" ", "_")
 
             print(term, destination)
-            print(term)
+            # print(term)
             call('aria2c -i ./{}_pins.txt -d {} --continue --auto-file-renaming false'.format(term.replace(" ", "_"),
                                                                                               destination),
                  shell=True)
