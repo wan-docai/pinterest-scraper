@@ -1,4 +1,4 @@
 # Pinterest Settings
-PINTEREST_USERNAME = 'pinterest1234@mailinator.com'
+PINTEREST_USERNAME = 'image123@mailinator.com'
 
-PINTEREST_PASSWORD = 'pinterest1234'
+PINTEREST_PASSWORD = 'image123'
