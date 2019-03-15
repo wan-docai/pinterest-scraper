@@ -11,6 +11,7 @@ import time
 import unicodedata
 import urllib
 from subprocess import call
+from pyvirtualdisplay import Display
 import os
 
 from selenium import webdriver
@@ -35,6 +36,8 @@ class PinterestHelper(object):
     def __init__(self, login, pw, download=True):
         self.download = download
         # self.browser = webdriver.Firefox()
+        display = Display(visible=0, size=(800, 800))
+        display.start()
         self.browser = webdriver.Chrome()
         self.browser.get("https://www.pinterest.com")
         email_elem = self.browser.find_element_by_name('id')
