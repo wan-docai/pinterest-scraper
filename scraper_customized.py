@@ -115,7 +115,7 @@ def main():
             call('aria2c -i ./{}_pins.txt -d {} --continue --auto-file-renaming false'.format(term.replace(" ", "_"),
                                                                                               destination),
                  shell=True)
-            time.sleep(200)
+            time.sleep(360)
 
 
 if __name__ == '__main__':
