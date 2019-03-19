@@ -2,19 +2,17 @@ import pandas as pd
 import random
 import csv
 import argparse
+from sklearn.model_selection import train_test_split
 
-def sample_images(filename, sample_n, df_output_file):
+def sample_images(filename, test, train):
     file = pd.read_csv(filename, header = None, delimiter = ',')
 
-    n = len(file)
-    sample_n = sample_n
-    print(sample_n)
+    train, test = train_test_split(file, test_size=0.005)
 
-    skip = sorted(random.sample(range(n), (n-sample_n)))
-    df_output_file = pd.read_csv(filename, skiprows = skip)
-    df_output_file.to_csv(args.output_file, index = False)
+    test.to_csv(args.output_sample_file, index = False)
+    train.to_csv(args.output_remaining_file, index = False)
 
-    return df_output_file
+    return test, train
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Pinterest image sampler')
@@ -27,23 +25,22 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '--sample-n',
+        '--output-sample-file',
         required=True,
-        type=int,
-        help='Number to sample'
+        type=str,
+        help='file name for output sample file'
     )
 
     parser.add_argument(
-        '--output-file',
+        '--output-remaining-file',
         required=True,
         type=str,
-        help='file name for output file'
+        help='file name for output remaining file'
     )
 
     args = parser.parse_args()
 
-    sample_images(args.filename, args.sample_n, args.output_file)
-
+    sample_images(args.filename, args.output_sample_file, args.output_remaining_file)
 
 
     # file = pd.read_csv('unhealthy-labels.csv', delimiter = ',')
