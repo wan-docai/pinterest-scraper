@@ -4,15 +4,15 @@ import csv
 import argparse
 
 def sample_images(filename, sample_n, df_output_file):
-    file = pd.read_csv(filename, delimiter = ',')
+    file = pd.read_csv(filename, header = None, delimiter = ',')
 
     n = len(file)
     sample_n = sample_n
     print(sample_n)
 
-    skip = sorted(random.sample(range(n), n-sample_n))
+    skip = sorted(random.sample(range(n), (n-sample_n)))
     df_output_file = pd.read_csv(filename, skiprows = skip)
-    df_output_file.to_csv(args.output_file)
+    df_output_file.to_csv(args.output_file, index = False)
 
     return df_output_file
 
