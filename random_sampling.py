@@ -9,8 +9,8 @@ def sample_images(filename, test, train):
 
     train, test = train_test_split(file, test_size=0.005)
 
-    test.to_csv(args.output_sample_file, index = False)
-    train.to_csv(args.output_remaining_file, index = False)
+    test.to_csv(args.output_sample_file, index = False, header = None)
+    train.to_csv(args.output_remaining_file, index = False, header = None)
 
     return test, train
 
